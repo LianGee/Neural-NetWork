@@ -64,7 +64,7 @@ y[ix]经过三次循环每一类中的N个数据都被附上同一个标签
 <font style="line-height:2;", size = '3'>
 
 # 神经网络如何预测  
-<img src = "http://localhost:8888/files/Convolutional%20Neural%20Networks%20for%20Visual%20Recognition/image/1.png">
+<img src = "https://github.com/LianGee/Neural-NetWork/blob/master/images/1.png">
 神经网络使用前向传播进行预测。前向传播只不过是一对矩阵相乘并使用激活函数（softmax sigmoid tanh etc.）。  
 假如x是该网络的2维输入，我们将按照如下计算预测值（也是二维的）：  
 $z_1 = xW_1 + b_1$  
@@ -72,7 +72,7 @@ $a_1 = tanh(z_1)$
 $z_2 = a_1W_2 + b_2$ 
 $a_2 = y = softmax(z_2)$  
 $z_i$ 是输入层、$a_i$是输出层。W1,b1,W2,b2是需要从训练数据中学习的网络参数。你可以把它们看作是神经网络各层之间数据转换矩阵。  
-<img src = "http://localhost:8888/files/Convolutional%20Neural%20Networks%20for%20Visual%20Recognition/image/2.png">  
+<img src = "https://github.com/LianGee/Neural-NetWork/blob/master/images/2.png">  
 上面的过程中我们发现，实际上是有两层的神经网络的，也就是说$z_1$作为第一层的输入，第一层输出$a_1$，然后将$a_1$代入线性方程作为第二层的输入，输出$a_2$， 然后将$a_2$作为softmax的输入。
 
 <div style="font-family:elephant, 'Microsoft YaHei';"> 
